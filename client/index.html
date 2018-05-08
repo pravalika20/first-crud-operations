@@ -1,0 +1,54 @@
+<html ng-app="myApp">
+<head>
+	<title>Inventory</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+      <div class="container">
+      
+          <h1>Inventory Management</h1>
+        </div>
+		</nav>
+   
+<style>
+	  .center {
+    margin: auto;
+    width: 9%;
+    height: 10%;
+    border: 3px solid white;
+    padding: 10px 10px;
+	text-align:center;
+	vertical-align: lower;
+}
+
+</style>
+  <div>
+          <ul class="center">
+            <li><a href="#/products/add">Add products</a></li></ul>
+	   <ul class="center">
+	    <li><a href="#/products/view">View products</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<div ng-view></div>
+    		</div>
+    	</div>
+     </div>
+
+    </div><!-- /.container -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="/app.js"></script>
+
+	<script src="/controllers/products.js"></script>
+</body>
+</html>
