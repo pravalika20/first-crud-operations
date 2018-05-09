@@ -1,11 +1,12 @@
 var myApp = angular.module('myApp',['ngRoute']);
 
 myApp.config(function($routeProvider){
-	$routeProvider.when('/', {
-		controller:'ProductsController',
-		templateUrl: 'views/products.html'
-	})
-	.when('/products', {
+    $routeProvider.when('/',{
+        controller:'ProController',
+        templateUrl:'views/pro.html'
+    })
+
+	.when('/products/view', {
 		controller:'ProductsController',
 		templateUrl: 'views/products.html'
 	})

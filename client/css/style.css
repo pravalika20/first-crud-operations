@@ -16,7 +16,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
 }
 
@@ -28,5 +28,6 @@ li a:hover {
 body {
     background-image: url("https://www.handshake.com/blog/wp-content/uploads/2015/07/inventory-management-techniques-1024x579.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
+

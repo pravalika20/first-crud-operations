@@ -3,6 +3,7 @@
   <div class="panel-heading">
     <h3 class="panel-title">{{product.name}}</h3>
   </div>
+  <div class="panel-body" style="font-weight: 800; color: black; background-image:url(http://pic.qiantucdn.com/58pic/27/04/12/03R58PICUkm_1024.jpg!qt324); background-repeat: no-repeat; background-size: cover;">
   <div class="panel-body">
 
         <div class="col-md-4">
@@ -20,12 +21,12 @@
           <div class="pull-bottom">
 
               <div class="pull-right">
-  <a href="#/products/edit/{{product._id}}">Edit</a> |  <a href="#" ng-click="removeProduct(product._id)">Delete</a>
+  <a href="#/products/edit/{{product._id}}"><button>Edit</button></a> |  <a href="#" ng-click="removeProduct(product._id)"><button>Delete</button></a>
   </div>
            </div>
 
           <div class="pull-left">
-            <a href="#/products">Go Back</a>
+              <a href="#/products"><button>Go Back</button></a>
           </div>
       </div>
 
