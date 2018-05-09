@@ -22,6 +22,15 @@ myApp.config(function($routeProvider){
 		controller:'ProductsController',
 		templateUrl: 'views/edit_product.html'
 	})
+    .when('/products/edit',{
+		controller:'ProductsController',
+		templateUrl: 'views/edit.html'
+	})
+     .when('/products/delete',{
+		controller:'ProductsController',
+		templateUrl: 'views/delete.html'
+	})
+    
 	.otherwise({
 		redirectTo: '/'
 	});

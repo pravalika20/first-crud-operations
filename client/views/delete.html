@@ -1,6 +1,6 @@
 <div class="panel panel-default" ng-init="getProducts()">
   <div class="panel-heading" style="background-image:none;background: Gray">
-    <h3 class="panel-title" >Products in the Store</h3>
+    <h3 class="panel-title" >Delete a Product?</h3>
   </div>
 
  <div class="panel-body" style="font-weight: 800; color: black; background-image:url(https://image.dek-d.com/27/0492/3201/121222972); background-repeat: no-repeat; background-size: cover;">
@@ -17,7 +17,11 @@
                      <div class="col-md-3">
         <img src="{{product.image_url}}">
       </div>
-     
+      <div class="pull-bottom">
+
+              <div class="col-md-9">
+  <a href="#" ng-click="removeProduct(product._id)"><button>Delete</button></a>
+  </div>
   </div>
 
     </div>
